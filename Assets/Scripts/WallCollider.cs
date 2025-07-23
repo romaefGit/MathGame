@@ -20,6 +20,7 @@ public class WallCollider : MonoBehaviour
     {
         if (collision.gameObject == EnemyBehaviour.Instance.gameObject)
         {
+            //Debug.Log("<<< Colisiona contra la pared >>>");
             var newDirection = EnemyBehaviour.Instance.direction;
 
             newDirection = newDirection * -1;
